@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<script src="blabla">
+   alert ('1'); 	
+</script>
+<mark>If src is set, the script content is ignored.</mark>
+<!-- we can add another <script>..</script>-->
+<script>
+	alert("My world");
+	// (;) is important in this case
+	// IF you forget, foreach funtion will not work
+	["love","hate"].forEach(alert)
+	//      Nested comments are not supported!
+
+    //      There may not be /*...*/ inside another /*...*/.
+alert( 'World' );
+</script>
+<script type="text/javascript">
+	/*
+	“use strict”
+
+The directive looks like a string: "use strict" or 'use strict'. When it is located on the top of the script, then the whole script works the “modern” way.
+	*/
+	"use strict";
+
+	//This is code will work modern way
+    // you should always use "use strict" 
+    // refer --> http://javascript.info/strict-mode
+    alert("Thinking");
+</script>
+<script type="text/javascript">
+	let Noti;
+	Noti='What are you doing now?';
+	Time='Last 2 hours';
+	alert(Noti);
+	alert(Time);
+
+</script>
+<script type="text/javascript">
+	"use strict";
+	let Message;
+	Message='Hi';
+	Message='Hay';// value changed
+	alert(Message);
+
+	let Name;
+	Name="ye";
+	let Boy;
+	Boy=Name;
+	// now two variables hold the same data
+	alert(Boy);
+</script>
+<script type="text/javascript">
+	let $ = 1;
+	    _ = 4;
+	    alert ($+_);
+	 /* Variables named apple and AppLE – are two different variables.*/
+	 // Case sensitive
+</script>
+</body><!-- reference javascript.info-->
+</html>

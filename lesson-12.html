@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript function</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	function something() {
+     		let x = 1 ;
+     		alert (x);
+     	}
+     	something();// 1
+     	alert ( x ); //it will show error because he variable is local to the function
+     </script>
+     <script type="text/javascript">
+     
+     	let y = 2 ;
+     	function donow(){
+     		let z= "1+1 =" + y ;
+     		alert (z);
+     	}
+     	donow();
+     </script>
+     <script type="text/javascript">
+     	    'use strict';
+    let userName = 'John';
+    
+    function showMessage() {
+      userName = "Bob"; // (1) changed the outer variable
+    
+      let message = 'Hello, ' + userName;
+      alert(message);
+    }
+    
+    alert( userName ); // John before the function call
+    
+    showMessage();
+    
+    alert( userName ); // Bob, the value was modified by the function
+     </script>
+     <script type="text/javascript">
+    'use strict';
+    function showMessage(from, text) { // arguments: from, text
+      alert(from + ' is ' + text);
+    }
+    
+    showMessage("Mg Mg", "a boy."); 
+    showMessage("Ma Ma", "a girl."); 
+     </script>
+     <script type="text/javascript">
+     	    'use strict';
+    function showMessage(from, text) {
+    
+      from = '*' + from + '*'; // make "from" look nicer
+    
+      alert( from + ': ' + text );
+    }
+    
+    let from = "Ann";
+    
+    showMessage(from, "Hello"); // *Ann*: Hello
+    
+    // the value of "from" is the same, the function modified a local copy
+    alert( from ); // Ann
+     </script>
+     <script type="text/javascript">
+     	    'use strict';
+    function sum(a, b,c) {
+      return a + b + c;
+    }
+    
+    let result = sum("Mg Mg"," is"," a boy");
+    alert( result);
+     //   function name(parameters, delimited, by, comma) { /* code */}
+     // reference javascript.info
+     </script>
+</body>
+</html>

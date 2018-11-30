@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	 //There are three logical operators in JavaScript
+     	 /* || mean OR
+     	     && mean AND
+     	     ! mean NOT */
+     	     "use strict";
+     	let hour = 12;
+    let isWeekend = true;
+    
+    if (hour < 10 || hour > 18 || isWeekend) {
+      alert( 'The office is closed.' ); // it is the weekend
+    }
+</script>
+     <script type="text/javascript">
+    //OR seeks the first truthy value
+    //result = value1 || value2 || value3;
+    let user1= null ;
+        user2= "Ye";
+        user3= "Aye";
+
+        let name = user3 || user2 || user1 ;
+        alert (name) ;
+     </script>
+     <script type="text/javascript">
+     	let x;
+     	true || ( x- 1 );
+     	alert (x); // undefined , because (x=1) not evaluate
+
+     	let y;
+     	false || ( y=1 );
+     	alert (y); // 1 
+     </script>
+     <script type="text/javascript">
+     	alert( true && true );   // true
+        alert( false && true );  // false
+        alert( true && false );  // false
+        alert( false && false ); // false
+        /* It is easy for me because I learned about logic gates at Grade 10.*/
+        // http://javascript.info/logical-operators
+     </script>
+  <script>
+    'use strict';
+    let hour = 12;
+    let minute = 30;
+    
+    if (hour == 12 && minute == 30) {
+      alert( 'Time is 12:30' );
+    }
+    // && is higher than || , so it execute first
+    //  || >>first truthy
+    // reference http://javascript.info/logical-operators
+  </script>
+  <!-- A double NOT !! is sometimes used for converting a value to boolean type: -->
+
+</body>
+</html>

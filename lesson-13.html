@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	// Function expression and arrows
+    	function jarjar() {
+
+    		alert ( "hi");
+    	}
+    	let harhar = jarjar ;
+    	let narnar = harhar ;
+    	jarjar();
+    	harhar();
+    	narnar();
+    	/* function sayHi() {
+  // ...
+}
+
+let sayHi = function() {
+  // ...
+};
+
+
+    There’s no need for ; at the end of code blocks and syntax structures that use them like if { ... }, for { }, function f { } etc.
+    A Function Expression is used inside the statement: let sayHi = ...;, as a value. It’s not a code block. The semicolon ; is recommended at the end of statements, no matter what is the value. So the semicolon here is not related to the Function Expression itself in any way, it just terminates the statement.
+*/
+    </script>
+    <script type="text/javascript">
+    	"use strict";
+    	function ask( question , yes , no ) {
+    		if (confirm ( question )) yes()
+    			else no();
+    	}
+    	function showOk() {
+    		alert ( "Welcome");
+
+    	}
+    	function showCancle () {
+    		alert ( "Good bye !!");
+    	}
+
+    	ask("Do you agree?", showOk , showCancle);
+    	//The arguments of ask are called callback functions or just callbacks.
+    </script>
+    <script type="text/javascript">
+    	//Arrow functions
+
+    	//let func = (arg1, arg2, ...argN) => expression
+    	/* let func = function(arg1, arg2, ...argN) {
+  return expression;
+}; */let combine = ( a , b , c) => a + b + c ;
+     alert ( combine ("Mg Mg"," is"," a boy"));
+
+     //Multiple arrow functions
+
+     let sum = ( a , b,c) => {
+
+     	let result = a + b + c ;
+     	return result ;
+
+     };
+
+     alert ( sum( "Ma Ma"," is"," a girl"));
+    </script>
+    <!-- reference javascript.info -->
+</body>
+</html>

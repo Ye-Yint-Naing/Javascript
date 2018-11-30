@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript(loop)</title>
+</head>
+<body>
+       <script type="text/javascript">
+       	"use strict";
+       	//Brackets are not required for a single-line body
+       	  let x = 1 ;
+       	  do {
+       	  	alert ( x );
+       	  	x++ ;
+       	  }while (x <10);
+       </script>
+       <script type="text/javascript">
+       	  for (let x = 1 ; x < 8 ; x++){
+       	  	alert (x);
+       	  }
+       	  /* 
+>>>begin 	i = 0 	Executes once upon entering the loop.
+>>>condition 	i < 3 	Checked before every loop iteration, if fails the loop stops.
+>>>step 	i++ 	Executes after the body on each iteration, but before the condition check.
+>>>body alert(i) 	Runs again and again while the condition is truthy */
+       </script>
+       <script type="text/javascript">
+       	   let y = 1 ;
+       	   for ( ; y < 8 ; x++ ) {
+       	   	alert (y);
+       	   }// we can also remove the begin part
+       	   // we can also remove the step part
+       	   let z = 1 ;
+       	   for (; z < 9 ; ){
+       	   	alert ( z++);
+       	   }
+       </script>
+       <script type="text/javascript">
+       	for (let n = 1 ; n < 16 ; n++){
+       		if ( n % 2 == 0) continue;
+
+       		alert (n);
+       		// odd number is output
+       	}
+       </script>
+       <script type="text/javascript">
+              'use strict';
+    outer: for (let i = 0; i < 3; i++) {
+    
+      for (let j = 0; j < 3; j++) {
+    
+        let input = prompt(`Value at coords (${i},${j})`, '');
+    
+        // if an empty string or canceled, then break out of both loops
+        if (!input) break outer; // (*)
+    
+        // do something with the value...
+      }
+    }
+    alert('Done!');
+       </script>
+       <!-- reference javascript.info -->
+</body>
+</html>

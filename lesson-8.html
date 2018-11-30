@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	"use strict";
+    	let username = prompt ("Username","");
+
+        if (username == "admin123") {
+
+        	let pass = prompt ("Password","");
+
+        	if (pass == "admin123"){
+        		alert ( "Login" );	
+        	}
+        	else if ( pass == "" || pass == null) {
+        		alert ( "Cancled" );
+        	}
+        	else {
+        		alert ("Wrong");
+        	}
+        }
+        else if ( username == "" || username == null ) {
+        	alert ("Cancled");
+        }
+        else {
+        	alert ("Wrong");
+        }
+    </script>
+    <!-- reference http://javascript.info/types-->
+</body>
+</html>

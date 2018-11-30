@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JS Comparisons
+	</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	"use strict";
+    	let result = 4 > 1;
+
+    	alert (5>2);// it is ture because 5 is greater than 2
+//It is true because 3 is not equal 6
+
+
+    	alert (7 < 3 ); 
+    	// it is false because 3 is less than 7
+    	// In js, not equal sign is (!=)
+    	alert ( 3 != 6 );//It is true because 3 is not equal 6
+
+    	alert ( result );
+    	// Boolean is the result
+
+    </script>
+
+    <script type="text/javascript">
+    	// In string comparison
+    	alert ( 'A' > 'B' );// false 
+    	alert ( 'Car' > 'Cat');// false
+    	/* In comparison, compare first letter 
+    	if two strings of first letter are the same ,it will compare each second letter of strings */
+    </script>
+    <script type="text/javascript">
+    	// Comparison of different types
+    	alert ( '2' > 1 ); // true
+    	alert ( '01' == 1 ); //true , '01' become 1
+    
+    </script>
+    <script type="text/javascript">
+    	let a = 0;
+        alert( Boolean(a) ); // false
+
+        let b = "0";
+        alert( Boolean(b) ); // true
+
+        alert(a == b); // true!
+        // a fanny consequence :v
+
+        alert ( 0 == false );// true
+        alert ( 1 == true ); // true
+        alert (''  == false ); // true
+        //For a strict equality check ===
+        // (===) mean equal type and value let's see
+        alert ( 0 === false ); 
+        //false because the types are different
+        alert ( 1 === 1); // true- the types are the same
+        alert ( null == undefined ); // true 
+        alert ( null === undefined ); // false 
+  
+        // null become 0
+        // undefined become NaN
+    </script>
+    <script type="text/javascript">
+    	//For maths and other comparisons < > <= >=
+    	//Strange result: null vs 0
+
+    	alert ( null > 0 );// false
+    	alert ( null == 0 ); // false
+    	alert ( null >= 0 ); // true
+    	// (===),(>==),(<==),(!==)
+    </script>
+    <script type="text/javascript">
+    	alert( undefined > 0 ); // false (1)
+        alert( undefined < 0 ); // false (2)
+        alert( undefined == 0 ); // false (3)
+    	// undefined become NaN
+    	// NaN become special numeric value
+    </script>
+    <!-- reference http://javascript.info/types-->
+</body>
+</html>
